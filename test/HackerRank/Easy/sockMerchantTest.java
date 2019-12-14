@@ -11,20 +11,18 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-class SockMerchantTest {
-
-    @BeforeEach
-
+public class SockMerchantTest {
 
     @Test
     @DisplayName("Happy Path Test - only two socks, matching")
     void test1() {
         //arrange
-        
+        int[] testArray = {1,1};
+        int expected = 1;
         //act
-
+        int result = sockMerchant(2, testArray);
         //assert
-        assertEquals(2, calculator.add(1, 1));
+        assertEquals(expected, result);
     }
 
 }
