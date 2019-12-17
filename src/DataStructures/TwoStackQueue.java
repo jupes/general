@@ -1,7 +1,5 @@
 package DataStructures;
 
-// The code below handles the balanced parenthesis problem with a stack
-
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -10,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Queue {
+public class TwoStackQueue {
     public static class MyQueue<T> {
         private Stack<T> newDataStack = new Stack<T>();
         private Stack<T> oldDataStack = new Stack<T>();
@@ -26,7 +24,6 @@ public class Queue {
 
         /**
          * Get oldest item from queue
-         * 
          * @return oldest item
          */
         public T peek() {
@@ -47,7 +44,6 @@ public class Queue {
 
         /**
          * remove oldest item from queue
-         * 
          * @return oldest item
          */
         public T dequeue() {

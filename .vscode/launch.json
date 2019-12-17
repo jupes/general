@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JumpingOnCloudsSolution",
+            "request": "launch",
+            "mainClass": "HackerRank.Easy.JumpingOnCloudsSolution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "HackerRank.Easy.Solution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountValleysSolution",
+            "request": "launch",
+            "mainClass": "HackerRank.Easy.CountValleysSolution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SockMerchantSolution",
+            "request": "launch",
+            "mainClass": "SockMerchantSolution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickStart",
+            "request": "launch",
+            "mainClass": "QuickStart"
+        }
+    ]
+}
