@@ -1,5 +1,5 @@
 # General
-Repository for Hacker Rank and equivalent coding challenge problems, also includes study based material such as Algorithm implementations
+Repository for Hacker Rank and equivalent coding challenge problems, also includes study based material such as Algorithm implementations and Data Structures
 
 First Commit - 12/13/2019
 
