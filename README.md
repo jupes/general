@@ -23,3 +23,23 @@ Queue is like a line at an amusement park, FIFO (First In First Out) meaning the
 Implement a Queue using two stacks, one for newest entries and one for oldest
 Implemented a Queue using Linked List
 
+## Linked List
+
+Linked list can either be singly or doubly linked, meaning can point to its next or next and previous node. It has constant time for insertion and deletion as long as it is at the head or tail. Search is linear time.
+
+
+## Trees
+
+### Binary Search Trees
+This is what most folks first think of when they think of trees. Each node has at most a left and right child node, either can be null. Binary seach trees have a Log N time for insertion, deletion, and search as long as the tree is balanced well.
+
+### Red-Black Tree
+
+### Cartesian Tree
+
+### Splay Tree
+
+### AVL Tree
+
+### KD Tree
+
