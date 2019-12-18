@@ -43,3 +43,7 @@ This is what most folks first think of when they think of trees. Each node has a
 
 ### KD Tree
 
+### Trie
+
+A tree of characters, good for doing word validation and finding the count of words with given prefixes
+
