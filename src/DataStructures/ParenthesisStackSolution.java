@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
-public class StackSolution {
+public class ParenthesisStackSolution {
     public static char[][] TOKENS = {{'{', '}'}, {'[', ']'},{'(', ')'}};
 
     /**
