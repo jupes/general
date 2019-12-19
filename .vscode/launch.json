@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HashTableRansomNote",
+            "request": "launch",
+            "mainClass": "DataStructures.HashTableRansomNote"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - JumpingOnCloudsSolution",
             "request": "launch",
             "mainClass": "HackerRank.Easy.JumpingOnCloudsSolution"
