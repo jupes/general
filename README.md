@@ -31,9 +31,12 @@ Linked list can either be singly or doubly linked, meaning can point to its next
 ## Trees
 
 ### Binary Search Trees
+
 This is what most folks first think of when they think of trees. Each node has at most a left and right child node, either can be null. Binary seach trees have a Log N time for insertion, deletion, and search as long as the tree is balanced well.
 
 ### Red-Black Tree
+
+Tree that auto balances due to some rules and an extra setting on each node determining its color. O(log n) across the board. 
 
 ### Cartesian Tree
 
