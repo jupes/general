@@ -54,3 +54,13 @@ A tree of characters, good for doing word validation and finding the count of wo
 
 Heaps (Min or Max) are represented by arrays and have the max or min values first or last. Perfect data structure for the running median problem
 
+# Algorithms
+
+## Quicksort
+
+## Mergesort
+
+## Breadth First Search
+
+## Deapth First Search
+
