@@ -1,10 +1,9 @@
-# General
-Repository for Hacker Rank and equivalent coding challenge problems, also includes study based material such as Algorithm implementations and Data Structures
-
 First Commit - 12/13/2019
 
-# Hacker Rank 
-Ive added some of my answers to the interview warm up questions on hacker rank. The Sock Merchant answer is my favorite solution of the four because it works with a hash set.
+# General
+Repository for coding challenge problems, also includes study based material such as Algorithm implementations and Data Structures
+
+
 
 # Data Structures
 
@@ -64,3 +63,8 @@ Heaps (Min or Max) are represented by arrays and have the max or min values firs
 
 ## Deapth First Search
 
+
+
+# Hacker Rank 
+
+Ive added some of my answers to the interview warm up questions on hacker rank. The Sock Merchant answer is my favorite solution of the four because it works with a hash set.
