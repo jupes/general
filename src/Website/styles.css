@@ -1,0 +1,58 @@
+body {
+    background-color: #EEE;
+    font-family: Arial, Helvetica, sans-serif; /*list three because if user doesnt have one it goes to next*/
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+#container {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#content {
+    padding: 10px; /* goes top right bottom left, abbreviated here to one num because all same */
+}
+
+#nav {
+    width: 180px;
+    float: left;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#main {
+    width: 600px;
+    float: right;
+}
+
+#footer {
+    clear: both;
+    padding: 10px;
+    background-color: #999;
+    color: white;
+    text-align: right;
+}
+
+#nav .selected /*has for id, dot ( . ) for class */ {
+    font-weight: bold;
+}
