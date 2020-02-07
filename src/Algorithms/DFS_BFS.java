@@ -1,4 +1,4 @@
-package DataStructures;
+package Algorithms;
 
 import java.io.*;
 import java.math.*;

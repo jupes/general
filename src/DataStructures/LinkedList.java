@@ -1,38 +1,21 @@
 package DataStructures;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-
-public class Node {
-    int data;
-    Node next;
-
-    public Node(int data) {
-        this.data = data;
-    }
-}
-
 public class LinkedList {
-    Node head;
+    NodeLINKEDLIST head;
 
     public void append(int data) {
         if (head == null) {
-            head = new Node(data);
+            head = new NodeLINKEDLIST(data);
         }
-        Node current = head;
+        NodeLINKEDLIST current = head;
         while (current.next != null) {
             current = current.next;
         }
-        current.next = new Node(data);
+        current.next = new NodeLINKEDLIST(data);
     }
 
     public void prepend(int data) {
-        Node newHead = new Node(data);
+        NodeLINKEDLIST newHead = new NodeLINKEDLIST(data);
         newHead.next = head;
         head = newHead;
     }
@@ -44,7 +27,7 @@ public class LinkedList {
             head = head.next;
             return;
         }
-        Node current = head;
+        NodeLINKEDLIST current = head;
         while (current.next != null) {
             if (current.next.data == data) {
                 current.next = current.next.next;
@@ -57,11 +40,11 @@ public class LinkedList {
      * @param head start of linked list
      * @return
      */
-    boolean hasCycle(Node head) {
+    boolean hasCycle(NodeLINKEDLIST head) {
         if (head == null)
             return false;
-        Node fast = head.next;
-        Node slow = head;
+        NodeLINKEDLIST fast = head.next;
+        NodeLINKEDLIST slow = head;
         while (fast != null && fast.next != null && slow != null) {
             if (fast == slow) {
                 return true;

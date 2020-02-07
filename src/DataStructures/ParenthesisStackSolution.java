@@ -51,7 +51,7 @@ public class ParenthesisStackSolution {
     public static boolean isBalanced(String expression) {
         Stack<Character> stack = new Stack<Character>();
         for (char c : expression.toCharArray()) {
-            if (isOpenTerm(c)) {
+            if (isOpen(c)) {
                 stack.push(c);
             } else {
                 if (stack.isEmpty() || !matches(stack.pop(), c)) {

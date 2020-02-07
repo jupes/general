@@ -11,13 +11,17 @@ import java.util.regex.*;
 /**
  * Implement Queue using a linked list
  */
-public static class LinkedListQueue {
+public class LinkedListQueue {
     private static class Node {
         private int data;
         private Node next;
 
         private Node(int data) {
             this.data = data;
+        }
+
+        public boolean isEmpty() {
+            return false;
         }
     }
 
@@ -32,7 +36,7 @@ public static class LinkedListQueue {
         if(!head.isEmpty()) {
             return head.data;
         }
-        return null;
+        return 0;
     }
 
     public void add(int data) {

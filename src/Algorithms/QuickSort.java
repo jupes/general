@@ -40,4 +40,7 @@ public class QuickSort {
         }
         return left;
     }
+
+    private static void swap(int[] array, int left, int right) {
+    }
 }

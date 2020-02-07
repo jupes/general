@@ -8,25 +8,26 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Node {
+public class NodeBST {
     int data;
-    Node left, right;
+    NodeBST left, right;
 
-    public Node(int data) {
+    public NodeBST(final int data) {
         this.data = data;
     }
 
-    //insert is called from the node class, how would things change if insert was in a separate BST class
-    public void insert(int value) {
+    // insert is called from the node class, how would things change if insert was
+    // in a separate BST class
+    public void insert(final int value) {
         if (value <= data) {
-            if(left == null) {
-                left = new Node(value);
+            if (left == null) {
+                left = new NodeBST(value);
             } else {
                 left.insert(value);
             }
         } else {
             if (right == null) {
-                right = new Node(value);
+                right = new NodeBST(value);
             } else {
                 right.insert(value);
             }
@@ -34,22 +35,22 @@ public class Node {
     }
 
     // Ranges are inclusive, this function is linear time, space complexity is log n
-    public boolean checkBST(Node root, int min, int max) {
+    public boolean checkBST(final NodeBST root, final int min, final int max) {
         if (root == null) {
             return true;
         }
-        if (root.data <  min || root.data > max) {
+        if (root.data < min || root.data > max) {
             return false;
-        } 
+        }
         return checkBST(root.left, min, root.data - 1) && checkBST(root.right, root.data + 1, max);
 
     }
 
-    public boolean checkBST(Node root) {
+    public boolean checkBST(final NodeBST root) {
         return checkBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 
-    public boolean contains(int value) {
+    public boolean contains(final int value) {
         if (value == data) {
             return true;
         } else if (value < data) {
@@ -65,15 +66,16 @@ public class Node {
                 right.contains(value);
             }
         }
+        return false;
     }
 
     // In order traversal
     public void printInOrder() {
-        if(left != null) {
+        if (left != null) {
             left.printInOrder();
         }
         System.out.println(data);
-        if(right != null) {
+        if (right != null) {
             right.printInOrder();
         }
     }
@@ -81,41 +83,23 @@ public class Node {
     // PRE order traversal
     public void printPreOrder() {
         System.out.println(data);
-        if(left != null) {
+        if (left != null) {
             left.printPreOrder();
         }
-        if(right != null) {
+        if (right != null) {
             right.printPreOrder();
         }
     }
 
     // POST order traversal
     public void printPostOrder() {
-        if(left != null) {
+        if (left != null) {
             left.printPostOrder();
         }
-        if(right != null) {
+        if (right != null) {
             right.printPostOrder();
         }
         System.out.println(data);
-        
-    }
-}
 
-//ignore
-public class BinarySearchTree {
-     
-    public BinarySearchTree(Node node){
-        this.node = node;
-    }
-
-    public void insert(int value) {
-        if (value <= data) {
-            if(left == null) {
-                left = new Node(value);
-            } else {
-                left.insert(value);
-            }
-        } 
     }
 }

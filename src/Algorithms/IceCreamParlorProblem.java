@@ -11,11 +11,14 @@ import java.util.regex.*;
 // Point of this one is to, starting with some amount of money, find a pair of unique flavors that sum to equal my total cash
 public class IceCreamParlorProblem {
     public static int indexOf(int[] menu, int index, int excludeThis) {
+        //dont remember what value was supposed to be
+        int value = 0;
         for (int i = 0; i < menu.length; i++) {
             if (menu[i] == value && i != excludeThis) {
                 return i;
             }
         }
+        return 0;
     }
 
     public static int[] getIndiciesFromValues(int[] menu, int value1, int value2) {
@@ -33,7 +36,7 @@ public class IceCreamParlorProblem {
             int complement = money - sortedMenu[i];
             int location = Arrays.binarySearch(sortedMenu, i + 1, sortedMenu.length, complement);
             if (location >= 0 && location < menu.length && sortedMenu[location] == complement) {
-                int[] indicies = getIndiciesFromValues(menu, sortedMenu[i], compliment);
+                int[] indicies = getIndiciesFromValues(menu, sortedMenu[i], complement);
                 return indicies;
             }
         }

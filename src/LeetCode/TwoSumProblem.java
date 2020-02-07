@@ -7,6 +7,7 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
         // Keep track of numbers Ive seen before, store the index I saw them at
         Hashtable<Integer, Integer> knownValues = new Hashtable<Integer, Integer>();
+        
         for (int i = 0; i < nums.length; i++) {
             // Find the number that would work with the one at the current index
             int compliment = target - nums[i];

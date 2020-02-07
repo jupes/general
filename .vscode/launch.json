@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - findRectangles",
+            "request": "launch",
+            "mainClass": "findRectangles",
+            "projectName": "general_2e0ba8c0"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - karat2",
+            "request": "launch",
+            "mainClass": "karat2",
+            "projectName": "general_2e0ba8c0"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HashTableRansomNote",
             "request": "launch",
             "mainClass": "DataStructures.HashTableRansomNote"

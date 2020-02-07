@@ -11,13 +11,17 @@ import java.util.regex.*;
 /**
  * Implement Stack using a linked list, the code does not handle null pointers as is
  */
-public static class LinkedListStack {
+public class LinkedListStack {
     private static class Node {
         private int data;
         private Node next;
 
         private Node(int data) {
             this.data = data;
+        }
+
+        public boolean isEmpty() {
+            return false;
         }
     }
 
@@ -31,7 +35,7 @@ public static class LinkedListStack {
         if(!top.isEmpty()) {
             return top.data;
         }
-        return null;
+        return 0;
     }
 
     public void push(int data) {
